@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    line-height: 18.75px;
+    font-weight: 400px;
+    width: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(90deg, rgb(55, 97, 159) 0%, rgb(18, 43, 81) 35%, rgba(4, 12, 24, 1) 100%);
+
+}
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 40px 100px 10px;
+    background: linear-gradient(90deg, rgb(55, 97, 159) 0%, rgb(18, 43, 81) 35%, rgba(4, 12, 24, 1) 100%);
+
+}
+
+
+#logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+/* text */
+#navbar li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3ms ease;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24.59px;
+}
+
+#navbar li a:hover {
+    /* text-decoration:underline; */
+    color: rgb(42, 81, 139);
+}
+
+
+
+.Signin {
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24.59px;
+    color: white;
+    border: none;
+}
+
+.Signup {
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24.59px;
+    color: white;
+    background-color: rgba(255, 72, 32, 1);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 152px;
+    height: 58px;
+    border: none;
+}
+
+
+/* ------------------------hero--------------------- */
+#hero {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 5px;
+}
+
+#hero img {
+    width: 600.41px;
+    height: 631.15px;
+}
+
+#hero .explainatian .exp-header {
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -4%;
+    background-image: linear-gradient(90deg, rgba(174, 103, 250, 1), rgba(244, 152, 103, 1));
+    background-clip: text;
+    color: transparent;
+    max-width: 703px;
+    margin-top: -30px;
+
+}
+
+#hero .explainatian .exp-body {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27.32px;
+    color: rgba(129, 175, 221, 1);
+    max-width: 554px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+#hero .explainatian form input {
+    width: 456px;
+    height: 71px;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27.32px;
+    padding-left: 40px;
+    background-color: rgba(5, 45, 86, 1);
+}
+
+#hero .explainatian form input:focus {
+    border: none;
+    background-color: rgba(5, 45, 86, 1);
+}
+
+#hero .explainatian form input:active {
+    border: none;
+    background-color: rgba(5, 45, 86, 1);
+}
+
+#hero .explainatian form input::placeholder {
+    color: rgba(61, 97, 132, 1);
+}
+
+
+#hero .explainatian form button {
+    width: 174px;
+    height: 73px;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27.32px;
+    margin-left: -4px;
+    color: white;
+    background-color: rgba(255, 72, 32, 1);
+}
+
+#hero .people {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#hero .people .people-ex {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 37.61px;
+    color: white;
+    margin-left: 40px;
+}
+
+#hero .people .people-imgs {
+    display: flex;
+    align-items: center;
+}
+
+#hero .people .people-imgs img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-size: cover;
+    margin-right: -15px;
+}
+
+
+
+/* -----------------applications------------- */
+#applications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 18px;
+    line-height: 27.32px;
+    font-weight: 500;
+    color: rgb(188, 186, 186);
+    margin-top: 50px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+/* -----------------information------------ */
+#information {
+    /* background-image: url(Mask\ Group.png); */
+    background: linear-gradient(90deg, rgb(65, 109, 176) 0%, rgb(26, 56, 102) 35%, rgb(9, 26, 51) 100%);
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 70px;
+    box-shadow: 0px 2px 2px 1px rgb(26, 56, 102);
+    margin-bottom: 10px;
+}
+
+#information .intro {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+#information .intro p {
+    /* max-width: 731px; */
+    max-width: 700px;
+    color: rgba(129, 175, 221, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+
+#information .intro h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+#information .intro h1::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-image: linear-gradient(90deg, rgba(174, 103, 250, 1), rgba(244, 152, 103, 1));
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+
+
+
+
+#information .main .main-explore {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#information .main .main-explore h2 {
+    background-image: linear-gradient(90deg, rgba(174, 103, 250, 1), rgba(244, 152, 103, 1));
+    background-clip: text;
+    color: transparent;
+    max-width: 472px;
+    font-size: 34px;
+    line-height:45px ;
+    font-weight: 800;
+    margin-top: 60px;
+}
+
+#information .main .main-explore .explore{
+    text-decoration: none;
+    color: rgba(255, 138, 113, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+
+
+#information .main .categories{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    gap: 20px;
+}
+
+#information .main .categories .category{
+    position: relative;
+}
+
+#information .main .categories .category h3{
+    font-size: 24px;
+    line-height: 75px;
+    font-weight: 800;
+    letter-spacing: -4%;
+    color: #ffffff;
+}
+
+#information .main .categories .category h3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-image: linear-gradient(90deg, rgba(174, 103, 250, 1), rgba(244, 152, 103, 1));
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+#information .main .categories .category p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: rgba(129, 175, 221, 1);
+    margin-top: 20px;
+}
+
+
+/* -----------------future------------ */
+#future{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 10px;
+    margin: 110px;
+}
+
+
+
+
+
+#future .left-part {
+    margin-top: 25px;
+}
+
+#future .left-part .intro{
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 45px;
+    background-image: linear-gradient(90deg, rgba(174, 103, 250, 1), rgba(244, 152, 103, 1));
+    background-clip: text;
+    color: transparent;
+    /* max-width: 426px; */
+    max-width: 400px;
+}
+
+#future .left-part .Request{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: rgba(255, 138, 113, 1);
+    margin-top: 50px;
+}
+
+
+#future .right-part .card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    max-width: 590px;
+    gap: 100px;
+    position: relative;
+}
+
+#future .right-part .card .card-title{
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: -4%;
+    color: rgba(255, 255, 255, 1);
+    max-width: 182px;
+}
+#future .right-part .card .card-title::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-image: linear-gradient(90deg, rgba(174, 103, 250, 1), rgba(244, 152, 103, 1));
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+
+#future .right-part .card .card-description{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(129, 175, 221, 1);
+    max-width: 334px;
+}
+
+
+/* ---more-describtion--- */
+
+#more-describtion .des {
+    margin: 0 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 150px;
+}
+
+
+#more-describtion .des .img-part {
+    position: relative;
+}
+
+#more-describtion .des .img-part .chat-icon{
+    background-color: rgba(4, 44, 84, 1);
+    font-size: 30px;
+    width: 74.45px;
+    height: 74.45px;
+    border-radius: 16.55px;
+    position: absolute;
+    top: 50px;
+    left:50px;
+}
+#more-describtion .des .img-part .chat-icon:hover{
+    cursor:pointer;
+}
+
+
+#more-describtion .des .img-part .my-apps{
+    background-color: rgba(255, 138, 113, 1);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    width: 180px;
+    height: 74.45px;
+    border-radius: 16.55px;
+    position: absolute;
+    top: 131px;
+    left: 320px;
+}
+#more-describtion .des .img-part .my-apps:hover{
+    cursor:pointer;
+}
+
+#more-describtion .des .text-part .Request-f{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: rgba(113, 229, 255, 1);
+    margin-top: 250px;
+    margin-bottom: 20px;
+}
+
+#more-describtion .des .text-part .header{
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 45px;
+    background-image: linear-gradient(90deg, rgba(174, 103, 250, 1), rgba(244, 152, 103, 1));
+    background-clip: text;
+    color: transparent;
+    max-width: 426px;
+    margin-bottom: 20px;
+}
+
+#more-describtion .des .text-part p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(129, 175, 221, 1);
+    max-width: 479px;
+    margin-bottom: 20px;
+}
+
+#more-describtion .des .text-part .Request-l{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: rgba(255, 138, 113, 1);
+    margin-bottom: 20px;
+}
+
+
+#more-describtion .register {
+    background-image: linear-gradient(90deg, rgba(174, 103, 250, 1), rgba(244, 152, 103, 1));
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 50px;
+    box-shadow: 0px 2px 2px 1px rgb(26, 56, 102);
+    margin-bottom: 20px;
+    border-radius: 10.72px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#more-describtion .register div p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+    color: rgba(14, 14, 14, 1);
+}
+
+#more-describtion .register div h1 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 45px;
+    color: rgba(14, 14, 14, 1);
+}
+
+#more-describtion .register button {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    width: 189.14px;
+    height: 59.4px;
+    border-radius: 40px;
+}
